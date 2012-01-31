@@ -10,11 +10,14 @@
 			<li><%= f.label :state %><%= f.text_field :state %></li>	
 			<li><%= f.label :zip_code %><%= f.text_field :zip_code %></li>														
 			<li>Why are you signing?</li>
+			<li>&nbsp;</li>
+			<li class="submit"><%= f.submit "SIGN", :class => "ui-button-error" %></li>
 		</ul>
 	<% end %>
 </div>
 <div class="two-thirds column" id="main">
-	<%= image_tag "Pantone_w1280_h1024_cw1280_ch1024_cx1280_cy0.jpg", :size => "300x200" %>
+	<h2>Petition to Congress: Build More Wind Farms</h2>
+	<%= image_tag "Pantone_w1280_h1024_cw1280_ch1024_cx1280_cy0.jpg", :size => "300x200", :class => "img-main" %>
 	<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
 	<p>Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
