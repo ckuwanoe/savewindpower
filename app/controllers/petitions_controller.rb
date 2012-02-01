@@ -8,6 +8,7 @@ class PetitionsController < ApplicationController
 
     respond_to do |format|
       if @petition.save
+        ThanksMailer.send_thanks(@petition).deliver
         format.html { redirect_to(thanks_path, :notice => '') }
         format.xml  { render :xml => @petition, :status => :created, :location => @petition }
       else
