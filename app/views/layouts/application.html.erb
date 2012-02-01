@@ -39,21 +39,17 @@
 
 	<!-- Primary Page Layout
 	================================================== -->
-
-	<!-- Delete everything in this .container and get started on your own site! -->
-	<div class="nav">
+	<div id="nav">
 		<div class="container">
-			<div class="sixteen columns">
-				<div id="logo">
-					<%= link_to image_tag('logo.png'), "/" %>
-				</div>
-				<div class="sixteen columns" id="menu">
-					<ul>
-						<li><%= link_to "Home", "/" %></li>
-						<li><%= link_to "About Us", "/" %></li>
-						<li><%= link_to "Contact", "/" %></li>
-					</ul>
-				</div>
+			<div class="sixteen columns" id="logo">
+				<%= link_to image_tag('logo.png'), root_url %>
+			</div>
+			<div class="sixteen columns" id="menu">
+				<ul>
+					<li><%= link_to "Home", root_url %></li>
+					<li><%= link_to "About Us", "/" %></li>
+					<li><%= link_to "Contact", "/" %></li>
+				</ul>
 			</div>
 		</div>
 	</div>
