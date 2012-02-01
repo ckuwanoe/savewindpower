@@ -2,14 +2,14 @@
 	<h3>SIGN THIS PETITION</h3>
 	<%= form_for(@petition) do |f| %>
 		<ul>
-			<li><%= f.label :first_name %><%= f.text_field :first_name %></li>
-			<li><%= f.label :last_name %><%= f.text_field :last_name %></li>
-			<li><%= f.label :email %><%= f.text_field :email %></li>
-			<li><%= f.label :address %><%= f.text_field :address %></li>
-			<li><%= f.label :city %><%= f.text_field :city %></li>
-			<li><%= f.label :state %>
+			<li><%= f.label :first_name, :class => "text-label" %><%= f.text_field :first_name %></li>
+			<li><%= f.label :last_name, :class => "text-label" %><%= f.text_field :last_name %></li>
+			<li><%= f.label :email, :class => "text-label" %><%= f.text_field :email %></li>
+			<li><%= f.label :address, :class => "text-label" %><%= f.text_field :address %></li>
+			<li><%= f.label :city, :class => "text-label" %><%= f.text_field :city %></li>
+			<li><%= f.label :state, :class => "text-label" %>
 				<%= f.select(:state, [ 	
-					['Select', 'None'],
+					['Select', ''],
 					['Alabama', 'AL'], 
 					['Alaska', 'AK'],
 					['Arizona', 'AZ'],
@@ -62,7 +62,7 @@
 					['Wisconsin', 'WI'], 
 					['Wyoming', 'WY']]) %>
 			</li>	
-			<li><%= f.label :zip_code %><%= f.text_field :zip_code %></li>														
+			<li><%= f.label :zip_code, :class => "text-label" %><%= f.text_field :zip_code %></li>														
 			<li>Why are you signing?</li>
 			<li>&nbsp;</li>
 			<li class="submit"><%= f.submit "SIGN", :class => "ui-button-error" %></li>
