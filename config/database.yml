@@ -4,7 +4,7 @@ development:
   database: swp_development
   pool: 5
   username: swp
-  password: 0awjVYjTlWz6tg
+  password: 
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -16,7 +16,7 @@ test:
   database: swp_test
   pool: 5
   username: swp
-  password: 0awjVYjTlWz6tg
+  password: 
   socket: /tmp/mysql.sock
 
 production:
@@ -25,6 +25,6 @@ production:
   database: swp_production
   pool: 5
   username: swp
-  password: 0awjVYjTlWz6tg
+  password: 
   socket: /var/run/mysqld/mysqld.sock
 
